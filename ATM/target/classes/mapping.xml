@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.atm.Data_Entry" table="Data_Entry">
+    <id name="account_number" column="account_number">
+        <generator class="assigned"></generator>
+    </id>
+    <property name="pin" column="pin" type="int"/>
+    <property name="balance" column="balance" type="double"/>
+</class>
+</hibernate-mapping>
